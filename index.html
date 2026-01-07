@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Checker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Makes it nicer when saved to Home Screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Daily Checker" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Daily Checker</h1>
+    <div class="subtitle">Tap a day, check your habits, and see how many you completed.</div>
+
+    <!-- Calendar -->
+    <div class="card calendar-card">
+      <div class="calendar-header">
+        <button class="nav-btn" id="prevMonthBtn">&#8592;</button>
+        <div id="monthLabel"></div>
+        <button class="nav-btn" id="nextMonthBtn">&#8594;</button>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-weekday">S</div>
+        <div class="calendar-weekday">M</div>
+        <div class="calendar-weekday">T</div>
+        <div class="calendar-weekday">W</div>
+        <div class="calendar-weekday">T</div>
+        <div class="calendar-weekday">F</div>
+        <div class="calendar-weekday">S</div>
+        <div id="calendarDays"></div>
+      </div>
+      <div class="calendar-legend">
+        <span class="legend-dot legend-filled"></span> Completed habits
+        <span class="legend-dot legend-empty"></span> No completion
+      </div>
+    </div>
+
+    <!-- Daily checklist -->
+    <div class="card">
+      <div class="selected-date-header">
+        <span id="selectedDateLabel"></span>
+        <span id="selectedDateSummary" class="summary-pill"></span>
+      </div>
+      <div id="checklist"></div>
+      <div class="empty" id="noHabitsMessage">No habits yet. Add some below to start tracking.</div>
+    </div>
+
+    <!-- Habit management -->
+    <div class="card">
+      <div class="card-title-row">
+        <span>Habits</span>
+      </div>
+      <div class="habit-input-row">
+        <input
+          id="newHabitInput"
+          type="text"
+          placeholder="Add a habit (e.g. Gym, Read, Water)..."
+        />
+        <button class="btn-primary" id="addHabitBtn">Add</button>
+      </div>
+      <div id="habitList"></div>
+      <div class="hint-text">Habits apply to every day. Check them off per day using the calendar above.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
