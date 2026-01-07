@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Makes it nicer when saved to Home Screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Daily Log" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Daily Log</h1>
+    <div class="subtitle">Write one thing for today, then come back tomorrow.</div>
+
+    <div class="card">
+      <label for="note">Today’s note</label>
+      <textarea id="note" placeholder="What did you do today?"></textarea>
+
+      <div class="button-row">
+        <button class="btn-primary" id="saveBtn">Save</button>
+        <button class="btn-secondary" id="clearTodayBtn">Clear today</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="entry-header" style="margin-bottom: 8px;">
+        <span>History</span>
+        <button class="btn-secondary" id="clearAllBtn" style="flex: 0; padding: 4px 10px; font-size: 0.7rem;">
+          Clear all
+        </button>
+      </div>
+
+      <div class="entries" id="entries"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
