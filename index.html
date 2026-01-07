@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<<<<<<< HEAD
   <title>Daily Checker</title>
+=======
+  <title>Daily Log</title>
+>>>>>>> refs/remotes/origin/main
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Makes it nicer when saved to Home Screen -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<<<<<<< HEAD
   <meta name="apple-mobile-web-app-title" content="Daily Checker" />
+=======
+  <meta name="apple-mobile-web-app-title" content="Daily Log" />
+>>>>>>> refs/remotes/origin/main
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app">
+<<<<<<< HEAD
     <h1>Daily Checker</h1>
     <div class="subtitle">Tap a day, check your habits, and see how many you completed.</div>
 
@@ -65,6 +74,30 @@
       </div>
       <div id="habitList"></div>
       <div class="hint-text">Habits apply to every day. Check them off per day using the calendar above.</div>
+=======
+    <h1>Daily Log</h1>
+    <div class="subtitle">Write one thing for today, then come back tomorrow.</div>
+
+    <div class="card">
+      <label for="note">Today’s note</label>
+      <textarea id="note" placeholder="What did you do today?"></textarea>
+
+      <div class="button-row">
+        <button class="btn-primary" id="saveBtn">Save</button>
+        <button class="btn-secondary" id="clearTodayBtn">Clear today</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="entry-header" style="margin-bottom: 8px;">
+        <span>History</span>
+        <button class="btn-secondary" id="clearAllBtn" style="flex: 0; padding: 4px 10px; font-size: 0.7rem;">
+          Clear all
+        </button>
+      </div>
+
+      <div class="entries" id="entries"></div>
+>>>>>>> refs/remotes/origin/main
     </div>
   </div>
 

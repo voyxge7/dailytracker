@@ -36,6 +36,7 @@ h1 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
+<<<<<<< HEAD
 /* Calendar */
 
 .calendar-card {
@@ -230,11 +231,44 @@ h1 {
 }
 
 .habit-input-row input:focus {
+=======
+label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  color: #9ca3af;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  padding: 8px;
+  box-sizing: border-box;
+  background: #020617;
+  color: #e5e7eb;
+  resize: vertical;
+}
+
+textarea:focus {
+>>>>>>> refs/remotes/origin/main
   outline: 2px solid #3b82f6;
   border-color: #3b82f6;
 }
 
+<<<<<<< HEAD
 button {
+=======
+.button-row {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+>>>>>>> refs/remotes/origin/main
   padding: 10px 12px;
   border-radius: 999px;
   border: none;
@@ -254,6 +288,7 @@ button {
   border: 1px solid #374151;
 }
 
+<<<<<<< HEAD
 #habitList {
   margin-top: 6px;
 }
@@ -293,4 +328,32 @@ button {
   .calendar-day {
     min-height: 36px;
   }
+=======
+.entries {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.entry {
+  padding: 10px;
+  border-radius: 10px;
+  background: #020617;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.empty {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: center;
+  padding: 8px;
+>>>>>>> refs/remotes/origin/main
 }
